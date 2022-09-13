@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="890.0" prefWidth="1151.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MathsVis.controllers.UserInputPane_Controller">
+   <children>
+      <Pane layoutX="868.0" prefHeight="895.0" prefWidth="282.0" style="-fx-background-color: #e0e0e0;">
+         <children>
+            <Pane layoutX="9.0" layoutY="126.0" prefHeight="284.0" prefWidth="264.0">
+               <children>
+                  <Button fx:id="percentButton" layoutX="21.0" layoutY="9.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #96d3f9; -fx-border-radius: 20;">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fwdSlashButton" layoutX="78.0" layoutY="9.0" mnemonicParsing="false" onAction="#fwdSlashButton" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #96d3f9; -fx-border-radius: 20;" text="/">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="multiplyButton" layoutX="134.0" layoutY="9.0" mnemonicParsing="false" onAction="#multiplyButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #96d3f9; -fx-border-radius: 20;" text="*">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="minusButton" layoutX="190.0" layoutY="9.0" mnemonicParsing="false" onAction="#minusButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #96d3f9; -fx-border-radius: 20;" text="-">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sevenButton" layoutX="21.0" layoutY="63.0" mnemonicParsing="false" onAction="#sevenButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f9bc96;" text="7">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="eightButton" layoutX="78.0" layoutY="63.0" mnemonicParsing="false" onAction="#eightButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f9bc96;" text="8">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="nineButton" layoutX="134.0" layoutY="63.0" mnemonicParsing="false" onAction="#nineButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f9bc96;" text="9">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fourButton" layoutX="21.0" layoutY="120.0" mnemonicParsing="false" onAction="#fourButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f9bc96;" text="4">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fiveButton" layoutX="78.0" layoutY="120.0" mnemonicParsing="false" onAction="#fiveButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f9bc96;" text="5">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sixButton" layoutX="134.0" layoutY="120.0" mnemonicParsing="false" onAction="#sixButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f9bc96;" text="6">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="zeroButton" layoutX="22.0" layoutY="234.0" mnemonicParsing="false" onAction="#zeroButtonAction" prefHeight="50.0" prefWidth="107.0" style="-fx-background-color: #f9bc96;" text="0">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dotButton" layoutX="134.0" layoutY="234.0" mnemonicParsing="false" onAction="#dotButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f9bc96;" text=".">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="oneButton" layoutX="21.0" layoutY="177.0" mnemonicParsing="false" onAction="#oneButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f9bc96;" text="1">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="twoButton" layoutX="78.0" layoutY="177.0" mnemonicParsing="false" onAction="#twoButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f9bc96;" text="2">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="threeButton" layoutX="134.0" layoutY="177.0" mnemonicParsing="false" onAction="#threeButtonAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #f9bc96;" text="3">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="plusButton" layoutX="190.0" layoutY="63.0" mnemonicParsing="false" onAction="#plusButtonAction" prefHeight="107.0" prefWidth="50.0" style="-fx-background-color: #96d3f9; -fx-border-radius: 20;" text="+">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="enterButton" layoutX="190.0" layoutY="177.0" mnemonicParsing="false" onAction="#enterButtonAction" prefHeight="107.0" prefWidth="50.0" style="-fx-background-color: #96d3f9; -fx-border-radius: 20;" text="&lt;-">
+                     <font>
+                        <Font name="Lucida Console" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <TextArea fx:id="mainUserInput" layoutX="48.0" layoutY="131.0" onKeyTyped="#initialise" prefHeight="203.0" prefWidth="772.0" promptText="y = mx + c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Text fill="#1da1f2" layoutX="48.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maths Visualiser" textAlignment="CENTER" wrappingWidth="772.0">
+         <font>
+            <Font name="Lucida Console" size="46.0" />
+         </font>
+      </Text>
+      <Pane fx:id="renderedEquationPane" layoutX="48.0" layoutY="713.0" prefHeight="126.0" prefWidth="772.0" style="-fx-background-color: #e0e0e0;" />
+      <Button fx:id="visualiseButton" layoutX="48.0" layoutY="428.0" mnemonicParsing="false" onAction="#visualiseButtonAction" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #1DA1F2;" text="Visualise!">
+         <font>
+            <Font name="Lucida Console" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="indexVariablesButton" layoutX="174.0" layoutY="428.0" mnemonicParsing="false" onAction="#indexVariablesButtonAction" prefHeight="38.0" prefWidth="120.0" style="-fx-background-color: #AAB8C2;" text="Index Variables" />
+      <TabPane layoutX="48.0" layoutY="479.0" prefHeight="219.0" prefWidth="772.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab style="-fx-background-color: #d77ff5;" text="Basic Maths">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="184.0" prefWidth="675.0">
+                     <children>
+                        <Pane layoutX="-5.0" prefHeight="190.0" prefWidth="778.0" style="-fx-background-color: #d77ff5;">
+                           <children>
+                              <Pane fx:id="divisionButtonBase" layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="divisionButton1" fitHeight="38.0" fitWidth="51.0" layoutX="8.0" onMouseClicked="#divisionButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/division.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="75.0" layoutY="14.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="squaredButton1" fitHeight="38.0" fitWidth="30.0" layoutX="8.0" layoutY="1.0" onMouseClicked="#squaredButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/squared.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="134.0" layoutY="14.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="powerButton1" fitHeight="40.0" fitWidth="61.0" layoutX="8.0" onMouseClicked="#powerButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/power.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="191.0" layoutY="14.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="squareRootButton1" fitHeight="51.0" fitWidth="43.0" layoutX="1.0" onMouseClicked="#squareRootButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/square_root.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="248.0" layoutY="14.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="cubedRootButton1" fitHeight="46.0" fitWidth="38.0" layoutX="5.0" layoutY="1.0" onMouseClicked="#cubedRootButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/cube_root.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="302.0" layoutY="14.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="nthRootButton1" fitHeight="51.0" fitWidth="41.0" layoutX="3.0" layoutY="-1.0" onMouseClicked="#nthRootButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/nth_root.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="14.0" layoutY="76.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="naturalLogButton1" fitHeight="75.0" fitWidth="51.0" layoutX="2.0" layoutY="8.0" onMouseClicked="#naturalLogButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/natural_log.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="75.0" layoutY="76.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="logNButton1" fitHeight="51.0" fitWidth="43.0" layoutX="2.0" layoutY="7.0" onMouseClicked="#logNButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/log_n.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="134.0" layoutY="76.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="commonLogButton1" fitHeight="24.0" fitWidth="91.0" layoutY="8.0" onMouseClicked="#commonLogButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/common_log.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="14.0" layoutY="137.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="pieButton" fitHeight="39.0" fitWidth="35.0" layoutX="6.0" layoutY="5.0" onMouseClicked="#pieButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/pie.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="75.0" layoutY="137.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="eulersButton" fitHeight="39.0" fitWidth="35.0" layoutX="4.0" layoutY="1.0" onMouseClicked="#eulersButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/basics/eulersNum.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #ff6600;" text="Calculus &amp; Trigonometry">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="190.0" prefWidth="778.0" style="-fx-background-color: #ff6600;">
+                           <children>
+                              <Pane layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="summationButton" fitHeight="38.0" fitWidth="50.0" layoutX="13.0" onMouseClicked="#summationButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/calculus/summation.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="14.0" layoutY="76.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="sinButton" fitHeight="38.0" fitWidth="51.0" layoutX="-2.0" layoutY="8.0" onMouseClicked="#sinButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/calculus/sin.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="73.0" layoutY="76.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="cosButton" fitHeight="38.0" fitWidth="51.0" layoutX="-2.0" layoutY="8.0" onMouseClicked="#cosButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/calculus/cos.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="130.0" layoutY="76.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                                 <children>
+                                    <ImageView fx:id="tanButton" fitHeight="38.0" fitWidth="51.0" layoutX="-2.0" layoutY="8.0" onMouseClicked="#tanButtonAction" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../maths_symbols/calculus/tan.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #ff2b1c;" text="Graphs">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #d63a2f;">
+                     <children>
+                        <Pane fx:id="addGraphButton" layoutX="14.0" layoutY="14.0" onMouseClicked="#addGraphButtonAction" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                           <children>
+                              <Text layoutX="13.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" wrappingWidth="21.890625">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #FFFF8F;" text="User Defined Functions">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFFF8F;">
+                     <children>
+                        <Pane fx:id="addGraphButton1" layoutX="14.0" layoutY="14.0" onMouseClicked="#addNewFunctionAction" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                           <children>
+                              <Text layoutX="13.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" wrappingWidth="21.890625">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="addGraphButton11" layoutX="72.0" layoutY="14.0" onMouseClicked="#callFunctionAction" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #c7c7c7;">
+                           <children>
+                              <Text layoutX="7.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Call" wrappingWidth="33.890625">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <TextArea fx:id="errorChecker" editable="false" layoutX="48.0" layoutY="356.0" prefHeight="68.0" prefWidth="772.0" promptText="(Error Checker)" style="-fx-background-color: #ffaea8;">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </TextArea>
+      <Button fx:id="resetButton" layoutX="698.0" layoutY="428.0" mnemonicParsing="false" onAction="#resetButtonAction" prefHeight="38.0" prefWidth="120.0" style="-fx-background-color: #f26e1d;" text="Reset">
+         <font>
+            <Font name="Lucida Console" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="numpadButton" layoutX="615.0" layoutY="428.0" mnemonicParsing="false" onAction="#numpadButtonAction" prefHeight="38.0" prefWidth="66.0" style="-fx-background-color: #96d3f9;" text="Numpad">
+         <font>
+            <Font name="Lucida Console" size="12.0" />
+         </font>
+      </Button>
+      <Line endX="-100.00006103515625" endY="886.0" layoutX="969.0" layoutY="8.0" startX="-100.00006103515625" startY="-7.999998569488525" />
+      <Text layoutX="615.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toggle Inline Variable Declaration" wrappingWidth="186.40003967285156" />
+      <CheckBox fx:id="toggleInlineVariableOn" layoutX="801.0" layoutY="336.0" mnemonicParsing="false" onAction="#toggleInlineVariableOnAction" />
+   </children>
+</AnchorPane>
